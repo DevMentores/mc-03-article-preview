@@ -5,11 +5,51 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
 </head>
 
-<body class="bg-slate-800">
-  <div id="app"></div>
+<body class="bg-fem-blue-100 ">
+
+  <main class="flex flex-col items-center justify-center  mx-auto ">
+    <section class="bg-white rounded-lg shadow-lg overflow-hidden m-4 flex flex-col max-w-sm md:flex-row md:max-w-3xl">
+      <figure class="md:max-w-3xl w-full overflow-hidden ">
+        <img src=" ./assets/drawers.jpg" alt="image of green drawers" class="w-full object-cover md:h-full " />
+      </figure>
+      <article class="px-8 py-8 flex flex-col gap-4 font-manrope md:py-6 md:gap-3 ">
+        <h1 class="text-fem-blue-900 font-bold text-base md:text-2xl">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+        <p class="text-fem-blue-600 text-xs font-normal md:text-base">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+        <aside class="flex flex-row justify-between mt-4  items-center">
+          <div class="flex flex-row gap-4  items-center">
+            <figure class="rounded-full overflow-hidden w-12 h-12 ">
+              <img src="./assets/avatar-michelle.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+            <div class="flex flex-col font-manrope ">
+              <h2 class="font-bold text-fem-blue-900 text-sm">Michelle Appleton</h2>
+              <p class="font-normal text-fem-blue-600 text-sm">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <button
+            class="bg-fem-blue-100 rounded-full aspect-square flex justify-center items-center m-0 w-fit h-fit p-3"><img
+              src="./assets/icon-share.svg" alt="share icon"></button>
+        </aside>
+      </article>
+    </section>
+  </main>
+
+  <footer class="">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
   <script type="module" src="./js/main.js"></script>
 </body>
 

@@ -8,4 +8,9 @@ export default {
 		port: 8080,
 		hot: true,
 	},
+	css: {
+		postcss: {
+			plugins: [require("tailwindcss"), require("autoprefixer")],
+		},
+	},
 };
