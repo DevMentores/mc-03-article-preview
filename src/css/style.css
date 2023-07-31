@@ -19,3 +19,36 @@ body {
 * {
 	transition: all 0.3s ease;
 }
+
+#shareBanner {
+	@apply absolute   items-center gap-4 left-0 bottom-0 w-full py-6 px-8 bg-fem-blue-900 shadow-md rounded-none
+	md:max-w-xs md:rounded-md md:py-3 md:justify-center md:w-64 md:translate-x-72 md:bottom-16;
+	z-index: -1; /* Set initial z-index to -1 so it is placed behind other elements */
+}
+
+#shareBanner::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%; /* Position the triangle in the middle */
+	transform: translate(-50%, 100%); /* Center the triangle */
+	border-left: 12px solid transparent; /* Triangle left border */
+	border-right: 12px solid transparent; /* Triangle right border */
+	border-top: 12px solid rgb(72 85 106 / var(--tw-bg-opacity)); /* Triangle top border (change the color as needed) */
+}
+
+/* Show the triangle only on screens with size md and above */
+@media (max-width: 767px) {
+	#shareBanner::before {
+		display: none;
+	}
+}
+/* When the share banner is visible, increase the z-index to make it appear above other elements */
+#shareBanner:not(.hidden) {
+	z-index: 1;
+}
+
+/* Adjust the z-index of the share button to be above the share banner when the banner is visible */
+#shareBtn {
+	z-index: 2;
+}
