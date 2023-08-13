@@ -19,7 +19,6 @@ shareBtn.addEventListener("click", function (event) {
 function toggleShareBanner() {
 	const shareBanner = document.getElementById("shareBanner");
 	shareBanner.classList.toggle("hidden");
-	shareBanner.classList.toggle("flex");
 }
 
 function createShareBanner() {
