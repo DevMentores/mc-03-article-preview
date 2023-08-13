@@ -44,6 +44,10 @@ body {
 		display: none;
 	}
 }
+
+.hidden {
+	display: none !important;
+}
 /* When the share banner is visible, increase the z-index to make it appear above other elements */
 #shareBanner:not(.hidden) {
 	z-index: 1;
