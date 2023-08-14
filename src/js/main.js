@@ -1,5 +1,10 @@
 import "../css/style.css";
 
+// Update these paths based on your actual directory structure
+const facebookIconPath = "/icon-facebook.svg";
+const twitterIconPath = "./assets/icon-twitter.svg";
+const pinterestIconPath = "/icon-pinterest.svg";
+
 const shareBtn = document.getElementById("shareBtn");
 const cardFooter = document.getElementById("cardFooter");
 
@@ -28,13 +33,13 @@ function createShareBanner() {
 	shareBanner.innerHTML = `
     <p class="font-manrope uppercase tracking-widest text-fem-blue-300 font-normal text-sm">share</p>
   <a href="#" class="block mb-2">
-    <img src="./assets/icon-facebook.svg" alt="Facebook" class="w-6 h-6">
+    <img src="${facebookIconPath}" alt="Facebook" class="w-6 h-6">
   </a>
   <a href="#" class="block mb-2">
-    <img src="./assets/icon-twitter.svg" alt="Twitter" class="w-6 h-6">
+    <img src="${twitterIconPath}" alt="Twitter" class="w-6 h-6">
   </a>
   <a href="#" class="block">
-    <img src="./assets/icon-pinterest.svg" alt="Instagram" class="w-6 h-6">
+    <img src="${pinterestIconPath}" alt="Instagram" class="w-6 h-6">
   </a>
 `;
 	cardFooter.appendChild(shareBanner);
